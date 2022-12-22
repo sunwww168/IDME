@@ -22,7 +22,7 @@ IDME can be executed as standalone script with the following parameters:
 Name  |  Type | Description | Default 
 -------------  | ------------- |------------- | -------------
 allpath | string| It cotains the file path of networks | './datasets/filelist_dataset.txt'
-files|string|The rank list of IDME algorithm on each network| './datasets/+pt+/data/+pt+.tx'
+files|string|The rank list of IDME algorithm on each network| './datasets/+pt+/data/+pt+.txt'
 
 
 #Input
@@ -37,17 +37,14 @@ routeview<br>
 ca-astroph<br>
 
 # Output
-The scores of DCDME algorithm on each dynamic network, which are written to the 'result_score_LFR.xlsx' file. Community information can be obtained from object 'comm_va'.
+The rank list of IDME algorithm on each network, which are written to the './datasets/+pt+/data/+pt+.txt' file.
 
 Instructions for using DCDME code:
 
-1.Install networkx and scikit-learn python libraries before running the script.
+1.Install networkx  python libraries before running the script.
 
-2.Place the script inside the dataset folder. The folder should have edge files and community files corresponding to the number of snapshots. 
+2.Unzip datasets.zip to the current directory. 
 
-3.The dateset directory should contain the 'files.txt' file, which contains the directory to execute.
 
-4.Two files, 'edgeslist.txt' and 'commlist.txt', should be included in each directory to be executed, which respectively contain the information of each dynamic network and the corresponding groundtruth community.
+5.Run the python file IDME.py.
 
-5.Run the script like any ususal python script after following steps 1-4.
-Unzip datasets.zip to the current directory
