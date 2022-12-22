@@ -46,5 +46,5 @@ Instructions for using DCDME code:
 2.Unzip datasets.zip to the current directory. 
 
 
-5.Run the python file IDME.py.
+3.Run the python file IDME.py.
 
