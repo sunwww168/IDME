@@ -23,23 +23,18 @@ Name  |  Type | Description | Default
 -------------  | ------------- |------------- | -------------
 allpath | string| It cotains the file path of networks | './datasets/filelist_dataset.txt'
 files|string|The rank list of IDME algorithm on each network| './datasets/+pt+/data/+pt+.tx'
-l | integer |number of snapshot | len(edgefilelist)
+
 
 #Input
-The dynamic networks. We use batch processing, and all dynamic network file path names are placed in the 'files.txt' file. E.g:
-birthdeath_u0.1_b0.1_d0.1<br>
-birthdeath_u0.2_b0.1_d0.1<br>
-birthdeath_u0.3_b0.1_d0.1<br>
-birthdeath_u0.4_b0.1_d0.1<br>
-birthdeath_u0.5_b0.1_d0.1<br>
-birthdeath_u0.6_b0.1_d0.1<br>
-birthdeath_u0.7_b0.1_d0.1<br>
-birthdeath_u0.8_b0.1_d0.1<br>
-switch_u0.1_p0.1k5<br>
-switch_u0.1_p0.1k10<br>
-switch_u0.1_p0.1k15<br>
-switch_u0.1_p0.1k20<br>
-switch_u0.1_p0.1k25<br>
+All network file path names are placed in the './datasets/filelist_dataset.txt' file. E.g:<br>
+dolphins<br>
+CE<br>
+euroroad<br>
+citeseer<br>
+Hamster<br>
+powergird<br>
+routeview<br>
+ca-astroph<br>
 
 # Output
 The scores of DCDME algorithm on each dynamic network, which are written to the 'result_score_LFR.xlsx' file. Community information can be obtained from object 'comm_va'.
