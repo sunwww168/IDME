@@ -7,8 +7,6 @@ The identification of critical nodes is crucial for studying the spread of disea
 #requirements
 Python== 3.7.3
 networkx==2.3
-scikit-learn==1.0.2
-numpy==1.19.0
 matplotlist==3.1.0
 
 
@@ -18,13 +16,13 @@ The algorithm can be used as standalone program as well as integrated in python 
 
 ## Standalone
 
-DCDME can be executed as standalone script with the following parameters:
+IDME can be executed as standalone script with the following parameters:
 
 **arguments**
 Name  |  Type | Description | Default 
 -------------  | ------------- |------------- | -------------
-allpath | string| It cotains the file path of Dynamic networks | './data/my_LFR/files.txt'
-path_score|string|The scores of DCDME algorithm on each dynamic network| 'result_score_LFR.xlsx'
+allpath | string| It cotains the file path of networks | './datasets/filelist_dataset.txt'
+files|string|The rank list of IDME algorithm on each network| './datasets/+pt+/data/+pt+.tx'
 l | integer |number of snapshot | len(edgefilelist)
 
 #Input
